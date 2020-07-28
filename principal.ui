@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tareas Pendientes</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Recursos/lista-de-verificacion.png</normaloff>:/Recursos/lista-de-verificacion.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(216,224,253);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTableWidget" name="outTareas">
+         <property name="font">
+          <font>
+           <family>MS Reference Sans Serif</family>
+          </font>
+         </property>
+         <property name="cursor" stdset="0">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(250,251,255);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(245, 245, 245);</string>
+   </property>
+   <widget class="QMenu" name="mnuArchivo">
+    <property name="font">
+     <font>
+      <family>MS Reference Sans Serif</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>A&amp;rchivo</string>
+    </property>
+    <addaction name="actionAgregar"/>
+    <addaction name="actionFinalizar"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="mnuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(224, 224, 224);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAgregar"/>
+   <addaction name="actionFinalizar"/>
+  </widget>
+  <action name="actionAgregar">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Agregar</normaloff>:/Agregar</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Agregar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Reference Sans Serif</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionFinalizar">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Finalizar</normaloff>:/Finalizar</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Finalizar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Reference Sans Serif</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/salida (2).png</normaloff>:/Recursos/salida (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>Sa&amp;lir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Reference Sans Serif</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

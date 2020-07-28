@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="Finalizar">Recursos/lista.png</file>
+        <file alias="Agregar">Recursos/mas.png</file>
+        <file>Recursos/salida (2).png</file>
+        <file>Recursos/lista-de-verificacion.png</file>
+        <file>Calendario_de_tareas_en.qm</file>
+    </qresource>
+</RCC>
